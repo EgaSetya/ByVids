@@ -42,7 +42,7 @@ The app follows the MVVM design pattern with Coordinator and Clean Architecture
 This folder structure organizes the application into clear sections, making it easier for developers to navigate and understand the codebase.
 
 ## Getting Started
-To start the project, simply open the file TerraWeather.xcodeproj.
+To start the project, simply open the file ByVids.xcodeproj.
 
 ## Preview
 

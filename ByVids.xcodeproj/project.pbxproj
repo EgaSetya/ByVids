@@ -18,7 +18,18 @@
 		E47073522CAC40B600230107 /* VideoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47073512CAC40B600230107 /* VideoPageView.swift */; };
 		E47073552CAC419C00230107 /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = E47073542CAC419C00230107 /* SwiftyGif */; };
 		E47073572CAC419C00230107 /* SwiftyGif-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E47073562CAC419C00230107 /* SwiftyGif-Dynamic */; };
+		E48AE52E2CAE027100E01B84 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AE52D2CAE027100E01B84 /* Coordinator.swift */; };
+		E48AE5302CAE093700E01B84 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AE52F2CAE093700E01B84 /* MainPageView.swift */; };
+		E48AE54D2CAE211E00E01B84 /* View+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AE54C2CAE211E00E01B84 /* View+Modifier.swift */; };
 		E4C942712CACEDCA00E443AC /* AnimatedGifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C942702CACEDCA00E443AC /* AnimatedGifView.swift */; };
+		E4C942732CACFECB00E443AC /* PopUpAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C942722CACFECB00E443AC /* PopUpAlertView.swift */; };
+		E4C942782CAD454800E443AC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E4C942772CAD454800E443AC /* Lottie */; };
+		E4C9427A2CAD455D00E443AC /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C942792CAD455D00E443AC /* LottieView.swift */; };
+		E4C9427C2CAD46FE00E443AC /* loading_indicator_lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = E4C9427B2CAD46FE00E443AC /* loading_indicator_lottie.json */; };
+		E4C9427E2CAD4B0700E443AC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C9427D2CAD4B0700E443AC /* LoadingView.swift */; };
+		E4C942812CAD4D2700E443AC /* ResourceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C942802CAD4D2700E443AC /* ResourceViewModel.swift */; };
+		E4C942902CAD87A100E443AC /* DeleteVideoResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C9428F2CAD87A100E443AC /* DeleteVideoResponseEntity.swift */; };
+		E4C942922CAD882100E443AC /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C942912CAD882100E443AC /* VideoViewModel.swift */; };
 		E4D3FCE82CABB7D300B26198 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3FCE52CABB7D300B26198 /* NetworkError.swift */; };
 		E4D3FCE92CABB7D300B26198 /* NetworkProvider+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3FCE62CABB7D300B26198 /* NetworkProvider+Extension.swift */; };
 		E4D3FCEA2CABB7D300B26198 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3FCE72CABB7D300B26198 /* NetworkProvider.swift */; };
@@ -43,7 +54,17 @@
 		E470734C2CAC2FC500230107 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E470734E2CAC300000230107 /* VideoGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGridView.swift; sourceTree = "<group>"; };
 		E47073512CAC40B600230107 /* VideoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPageView.swift; sourceTree = "<group>"; };
+		E48AE52D2CAE027100E01B84 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E48AE52F2CAE093700E01B84 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		E48AE54C2CAE211E00E01B84 /* View+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Modifier.swift"; sourceTree = "<group>"; };
 		E4C942702CACEDCA00E443AC /* AnimatedGifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGifView.swift; sourceTree = "<group>"; };
+		E4C942722CACFECB00E443AC /* PopUpAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpAlertView.swift; sourceTree = "<group>"; };
+		E4C942792CAD455D00E443AC /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		E4C9427B2CAD46FE00E443AC /* loading_indicator_lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_indicator_lottie.json; sourceTree = "<group>"; };
+		E4C9427D2CAD4B0700E443AC /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		E4C942802CAD4D2700E443AC /* ResourceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceViewModel.swift; sourceTree = "<group>"; };
+		E4C9428F2CAD87A100E443AC /* DeleteVideoResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteVideoResponseEntity.swift; sourceTree = "<group>"; };
+		E4C942912CAD882100E443AC /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
 		E4D3FCE52CABB7D300B26198 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		E4D3FCE62CABB7D300B26198 /* NetworkProvider+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkProvider+Extension.swift"; sourceTree = "<group>"; };
 		E4D3FCE72CABB7D300B26198 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
@@ -60,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4C942782CAD454800E443AC /* Lottie in Frameworks */,
 				E4D3FCEF2CABB89F00B26198 /* Moya in Frameworks */,
 				E4D3FCED2CABB89F00B26198 /* CombineMoya in Frameworks */,
 				E47073552CAC419C00230107 /* SwiftyGif in Frameworks */,
@@ -96,6 +118,7 @@
 				E41CCD922CABB34B00AD90FE /* ByVidsApp.swift */,
 				E41CCD962CABB34C00AD90FE /* Assets.xcassets */,
 				E41CCD982CABB34C00AD90FE /* Preview Content */,
+				E48AE52F2CAE093700E01B84 /* MainPageView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -111,21 +134,60 @@
 		E47073472CAC269200230107 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E4C9427B2CAD46FE00E443AC /* loading_indicator_lottie.json */,
 				E47073482CAC26B400230107 /* ShimmerView.swift */,
 				E470734A2CAC26DF00230107 /* VideoGridItemView.swift */,
 				E470734C2CAC2FC500230107 /* SplashView.swift */,
 				E470734E2CAC300000230107 /* VideoGridView.swift */,
 				E4C942702CACEDCA00E443AC /* AnimatedGifView.swift */,
+				E4C942722CACFECB00E443AC /* PopUpAlertView.swift */,
+				E4C942792CAD455D00E443AC /* LottieView.swift */,
+				E4C9427D2CAD4B0700E443AC /* LoadingView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		E47073502CAC408900230107 /* Video Page */ = {
+		E47073502CAC408900230107 /* Video */ = {
 			isa = PBXGroup;
 			children = (
 				E47073512CAC40B600230107 /* VideoPageView.swift */,
+				E4C942912CAD882100E443AC /* VideoViewModel.swift */,
 			);
-			path = "Video Page";
+			path = Video;
+			sourceTree = "<group>";
+		};
+		E48AE52C2CAE026100E01B84 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E48AE52D2CAE027100E01B84 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E48AE54B2CAE20FE00E01B84 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E48AE54C2CAE211E00E01B84 /* View+Modifier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E4C9427F2CAD4D1A00E443AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E4D3FD022CABD20F00B26198 /* HomepageViewModel.swift */,
+				E4C942802CAD4D2700E443AC /* ResourceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E4C942822CAD66E900E443AC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E4D3FD012CABD1E800B26198 /* Home */,
+				E47073502CAC408900230107 /* Video */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		E4D3FCE32CABB76400B26198 /* Infrastructure */ = {
@@ -169,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				E4D3FCFA2CABC92500B26198 /* VideoResponseEntity.swift */,
+				E4C9428F2CAD87A100E443AC /* DeleteVideoResponseEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -176,20 +239,21 @@
 		E4D3FD002CABD1DB00B26198 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				E48AE54B2CAE20FE00E01B84 /* Extensions */,
+				E48AE52C2CAE026100E01B84 /* Coordinator */,
 				E47073472CAC269200230107 /* Components */,
-				E4D3FD012CABD1E800B26198 /* Home Page */,
-				E47073502CAC408900230107 /* Video Page */,
+				E4C942822CAD66E900E443AC /* Scenes */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		E4D3FD012CABD1E800B26198 /* Home Page */ = {
+		E4D3FD012CABD1E800B26198 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E4C9427F2CAD4D1A00E443AC /* ViewModel */,
 				E41CCD942CABB34B00AD90FE /* HomePageView.swift */,
-				E4D3FD022CABD20F00B26198 /* HomepageViewModel.swift */,
 			);
-			path = "Home Page";
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +277,7 @@
 				E4D3FCEE2CABB89F00B26198 /* Moya */,
 				E47073542CAC419C00230107 /* SwiftyGif */,
 				E47073562CAC419C00230107 /* SwiftyGif-Dynamic */,
+				E4C942772CAD454800E443AC /* Lottie */,
 			);
 			productName = ByVids;
 			productReference = E41CCD8F2CABB34B00AD90FE /* ByVids.app */;
@@ -245,6 +310,7 @@
 			packageReferences = (
 				E4D3FCEB2CABB89F00B26198 /* XCRemoteSwiftPackageReference "Moya" */,
 				E47073532CAC419C00230107 /* XCRemoteSwiftPackageReference "SwiftyGif" */,
+				E4C942762CAD454800E443AC /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = E41CCD902CABB34B00AD90FE /* Products */;
 			projectDirPath = "";
@@ -262,6 +328,7 @@
 			files = (
 				E41CCD9A2CABB34C00AD90FE /* Preview Assets.xcassets in Resources */,
 				E41CCD972CABB34C00AD90FE /* Assets.xcassets in Resources */,
+				E4C9427C2CAD46FE00E443AC /* loading_indicator_lottie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,20 +340,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				E47073492CAC26B400230107 /* ShimmerView.swift in Sources */,
+				E4C9427A2CAD455D00E443AC /* LottieView.swift in Sources */,
 				E4D3FCF52CABC6EB00B26198 /* TargetType.swift in Sources */,
 				E4D3FCFF2CABCB6700B26198 /* DataSourceFactory.swift in Sources */,
 				E4C942712CACEDCA00E443AC /* AnimatedGifView.swift in Sources */,
 				E4D3FD032CABD20F00B26198 /* HomepageViewModel.swift in Sources */,
 				E470734B2CAC26DF00230107 /* VideoGridItemView.swift in Sources */,
+				E4C942732CACFECB00E443AC /* PopUpAlertView.swift in Sources */,
+				E48AE52E2CAE027100E01B84 /* Coordinator.swift in Sources */,
+				E4C942812CAD4D2700E443AC /* ResourceViewModel.swift in Sources */,
 				E4D3FCFB2CABC92500B26198 /* VideoResponseEntity.swift in Sources */,
 				E4D3FCE82CABB7D300B26198 /* NetworkError.swift in Sources */,
 				E470734F2CAC300000230107 /* VideoGridView.swift in Sources */,
 				E41CCD952CABB34B00AD90FE /* HomePageView.swift in Sources */,
 				E41CCD932CABB34B00AD90FE /* ByVidsApp.swift in Sources */,
+				E4C9427E2CAD4B0700E443AC /* LoadingView.swift in Sources */,
+				E4C942902CAD87A100E443AC /* DeleteVideoResponseEntity.swift in Sources */,
 				E4D3FCE92CABB7D300B26198 /* NetworkProvider+Extension.swift in Sources */,
 				E4D3FCF92CABC85100B26198 /* VideoRepository.swift in Sources */,
+				E48AE54D2CAE211E00E01B84 /* View+Modifier.swift in Sources */,
+				E4C942922CAD882100E443AC /* VideoViewModel.swift in Sources */,
 				E4D3FCEA2CABB7D300B26198 /* NetworkProvider.swift in Sources */,
 				E47073522CAC40B600230107 /* VideoPageView.swift in Sources */,
+				E48AE5302CAE093700E01B84 /* MainPageView.swift in Sources */,
 				E4D3FCFD2CABC9A500B26198 /* RepositoryImplementation.swift in Sources */,
 				E470734D2CAC2FC500230107 /* SplashView.swift in Sources */,
 			);
@@ -506,6 +582,14 @@
 				minimumVersion = 5.4.5;
 			};
 		};
+		E4C942762CAD454800E443AC /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
 		E4D3FCEB2CABB89F00B26198 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -526,6 +610,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E47073532CAC419C00230107 /* XCRemoteSwiftPackageReference "SwiftyGif" */;
 			productName = "SwiftyGif-Dynamic";
+		};
+		E4C942772CAD454800E443AC /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4C942762CAD454800E443AC /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
 		};
 		E4D3FCEC2CABB89F00B26198 /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;

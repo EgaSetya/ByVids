@@ -9,4 +9,5 @@ import Combine
 
 protocol VideoRepository {
     func getVideos() -> AnyPublisher<VideoResponseEntity, NetworkError>
+    func deleteVideo(publicID: String) -> AnyPublisher<DeleteVideoResponseEntity, NetworkError>
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct ByVidsApp: App {
     var body: some Scene {
         WindowGroup {
-            HomePageView(viewModel: VideoViewModel(videoRepository: DefaultVideoRepository()))
+            MainPageView()
         }
     }
 }

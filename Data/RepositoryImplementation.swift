@@ -8,9 +8,15 @@
 import Combine
 
 final class DefaultVideoRepository: VideoRepository {
-    private let dataSourceFactory = DataSourceFactory()
+    private lazy var dataSourceFactory: DataSourceFactory  = {
+        DataSourceFactory()
+    }()
     
     func getVideos() -> AnyPublisher<VideoResponseEntity, NetworkError> {
         dataSourceFactory.remoteDataSource.request(.getVideos, VideoResponseEntity.self)
+    }
+    
+    func deleteVideo(publicID: String) -> AnyPublisher<DeleteVideoResponseEntity, NetworkError> {
+        dataSourceFactory.remoteDataSource.request(.deleteVideo(publicID: publicID), DeleteVideoResponseEntity.self)
     }
 }

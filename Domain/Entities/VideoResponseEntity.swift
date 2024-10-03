@@ -9,7 +9,7 @@ import Foundation
 
 struct VideoResponseEntity: Codable {
     let resources: [Resource]
-    let nextCursor: String
+    let nextCursor: String?
 }
 
 struct Resource: Codable {

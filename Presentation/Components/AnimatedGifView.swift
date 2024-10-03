@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-import SwiftyGif
-
 struct AnimatedGifView: UIViewControllerRepresentable {
     @Binding var url: URL
     

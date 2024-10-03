@@ -11,16 +11,27 @@
 		E41CCD952CABB34B00AD90FE /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41CCD942CABB34B00AD90FE /* HomePageView.swift */; };
 		E41CCD972CABB34C00AD90FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41CCD962CABB34C00AD90FE /* Assets.xcassets */; };
 		E41CCD9A2CABB34C00AD90FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41CCD992CABB34C00AD90FE /* Preview Assets.xcassets */; };
+		E4294A362CAED74500C8CFCC /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E4294A352CAED74500C8CFCC /* sample.mp4 */; };
+		E4294A382CAEE0A800C8CFCC /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = E4294A372CAEE0A800C8CFCC /* demo.gif */; };
+		E45C08692CAE8DE70002ABC5 /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C08682CAE8DE70002ABC5 /* VideoPicker.swift */; };
+		E45C086B2CAE8E240002ABC5 /* AddVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C086A2CAE8E240002ABC5 /* AddVideoViewModel.swift */; };
+		E45C086D2CAE99280002ABC5 /* UploadVideoResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C086C2CAE99280002ABC5 /* UploadVideoResponseEntity.swift */; };
 		E47073492CAC26B400230107 /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47073482CAC26B400230107 /* ShimmerView.swift */; };
 		E470734B2CAC26DF00230107 /* VideoGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470734A2CAC26DF00230107 /* VideoGridItemView.swift */; };
 		E470734D2CAC2FC500230107 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470734C2CAC2FC500230107 /* SplashView.swift */; };
 		E470734F2CAC300000230107 /* VideoGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470734E2CAC300000230107 /* VideoGridView.swift */; };
 		E47073522CAC40B600230107 /* VideoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47073512CAC40B600230107 /* VideoPageView.swift */; };
-		E47073552CAC419C00230107 /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = E47073542CAC419C00230107 /* SwiftyGif */; };
-		E47073572CAC419C00230107 /* SwiftyGif-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E47073562CAC419C00230107 /* SwiftyGif-Dynamic */; };
 		E48AE52E2CAE027100E01B84 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AE52D2CAE027100E01B84 /* Coordinator.swift */; };
 		E48AE5302CAE093700E01B84 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AE52F2CAE093700E01B84 /* MainPageView.swift */; };
 		E48AE54D2CAE211E00E01B84 /* View+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AE54C2CAE211E00E01B84 /* View+Modifier.swift */; };
+		E48AE5502CAE76B500E01B84 /* AddVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AE54F2CAE76B500E01B84 /* AddVideoView.swift */; };
+		E48B8E0F2CAED39500F7BA1F /* UIImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48B8E0C2CAED39500F7BA1F /* UIImage+SwiftyGif.swift */; };
+		E48B8E102CAED39500F7BA1F /* UIImageView+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48B8E0D2CAED39500F7BA1F /* UIImageView+SwiftyGif.swift */; };
+		E48B8E112CAED39500F7BA1F /* NSImageView+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48B8E072CAED39500F7BA1F /* NSImageView+SwiftyGif.swift */; };
+		E48B8E122CAED39500F7BA1F /* SwiftyGifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48B8E0B2CAED39500F7BA1F /* SwiftyGifManager.swift */; };
+		E48B8E132CAED39500F7BA1F /* ObjcAssociatedWeakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48B8E082CAED39500F7BA1F /* ObjcAssociatedWeakObject.swift */; };
+		E48B8E142CAED39500F7BA1F /* NSImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48B8E062CAED39500F7BA1F /* NSImage+SwiftyGif.swift */; };
+		E48B8E162CAED39500F7BA1F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = E48B8E092CAED39500F7BA1F /* PrivacyInfo.xcprivacy */; };
 		E4C942712CACEDCA00E443AC /* AnimatedGifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C942702CACEDCA00E443AC /* AnimatedGifView.swift */; };
 		E4C942732CACFECB00E443AC /* PopUpAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C942722CACFECB00E443AC /* PopUpAlertView.swift */; };
 		E4C942782CAD454800E443AC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E4C942772CAD454800E443AC /* Lottie */; };
@@ -43,12 +54,30 @@
 		E4D3FD032CABD20F00B26198 /* HomepageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D3FD022CABD20F00B26198 /* HomepageViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E40FE32A2CAED0D10034086A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E41CCD8F2CABB34B00AD90FE /* ByVids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByVids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41CCD922CABB34B00AD90FE /* ByVidsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByVidsApp.swift; sourceTree = "<group>"; };
 		E41CCD942CABB34B00AD90FE /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		E41CCD962CABB34C00AD90FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E41CCD992CABB34C00AD90FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4294A352CAED74500C8CFCC /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
+		E4294A372CAEE0A800C8CFCC /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
+		E45C08682CAE8DE70002ABC5 /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
+		E45C086A2CAE8E240002ABC5 /* AddVideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVideoViewModel.swift; sourceTree = "<group>"; };
+		E45C086C2CAE99280002ABC5 /* UploadVideoResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVideoResponseEntity.swift; sourceTree = "<group>"; };
 		E47073482CAC26B400230107 /* ShimmerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerView.swift; sourceTree = "<group>"; };
 		E470734A2CAC26DF00230107 /* VideoGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGridItemView.swift; sourceTree = "<group>"; };
 		E470734C2CAC2FC500230107 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -57,6 +86,15 @@
 		E48AE52D2CAE027100E01B84 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E48AE52F2CAE093700E01B84 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
 		E48AE54C2CAE211E00E01B84 /* View+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Modifier.swift"; sourceTree = "<group>"; };
+		E48AE54F2CAE76B500E01B84 /* AddVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVideoView.swift; sourceTree = "<group>"; };
+		E48B8E062CAED39500F7BA1F /* NSImage+SwiftyGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+SwiftyGif.swift"; sourceTree = "<group>"; };
+		E48B8E072CAED39500F7BA1F /* NSImageView+SwiftyGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
+		E48B8E082CAED39500F7BA1F /* ObjcAssociatedWeakObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjcAssociatedWeakObject.swift; sourceTree = "<group>"; };
+		E48B8E092CAED39500F7BA1F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		E48B8E0A2CAED39500F7BA1F /* SwiftyGif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyGif.h; sourceTree = "<group>"; };
+		E48B8E0B2CAED39500F7BA1F /* SwiftyGifManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGifManager.swift; sourceTree = "<group>"; };
+		E48B8E0C2CAED39500F7BA1F /* UIImage+SwiftyGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SwiftyGif.swift"; sourceTree = "<group>"; };
+		E48B8E0D2CAED39500F7BA1F /* UIImageView+SwiftyGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
 		E4C942702CACEDCA00E443AC /* AnimatedGifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGifView.swift; sourceTree = "<group>"; };
 		E4C942722CACFECB00E443AC /* PopUpAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpAlertView.swift; sourceTree = "<group>"; };
 		E4C942792CAD455D00E443AC /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
@@ -84,8 +122,6 @@
 				E4C942782CAD454800E443AC /* Lottie in Frameworks */,
 				E4D3FCEF2CABB89F00B26198 /* Moya in Frameworks */,
 				E4D3FCED2CABB89F00B26198 /* CombineMoya in Frameworks */,
-				E47073552CAC419C00230107 /* SwiftyGif in Frameworks */,
-				E47073572CAC419C00230107 /* SwiftyGif-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +131,14 @@
 		E41CCD862CABB34B00AD90FE = {
 			isa = PBXGroup;
 			children = (
+				E4294A342CAED54300C8CFCC /* Libraries */,
 				E4D3FCE32CABB76400B26198 /* Infrastructure */,
 				E4D3FCF12CABC62800B26198 /* Data */,
 				E4D3FCF22CABC62E00B26198 /* Domain */,
 				E4D3FD002CABD1DB00B26198 /* Presentation */,
 				E41CCD912CABB34B00AD90FE /* App */,
+				E48B8DFF2CAED24500F7BA1F /* Frameworks */,
+				E4294A372CAEE0A800C8CFCC /* demo.gif */,
 				E41CCD902CABB34B00AD90FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,9 +155,10 @@
 			isa = PBXGroup;
 			children = (
 				E41CCD922CABB34B00AD90FE /* ByVidsApp.swift */,
-				E41CCD962CABB34C00AD90FE /* Assets.xcassets */,
-				E41CCD982CABB34C00AD90FE /* Preview Content */,
 				E48AE52F2CAE093700E01B84 /* MainPageView.swift */,
+				E41CCD962CABB34C00AD90FE /* Assets.xcassets */,
+				E4294A352CAED74500C8CFCC /* sample.mp4 */,
+				E41CCD982CABB34C00AD90FE /* Preview Content */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -129,6 +169,14 @@
 				E41CCD992CABB34C00AD90FE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4294A342CAED54300C8CFCC /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E48B8E0E2CAED39500F7BA1F /* SwiftyGif */,
+			);
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 		E47073472CAC269200230107 /* Components */ = {
@@ -143,6 +191,7 @@
 				E4C942722CACFECB00E443AC /* PopUpAlertView.swift */,
 				E4C942792CAD455D00E443AC /* LottieView.swift */,
 				E4C9427D2CAD4B0700E443AC /* LoadingView.swift */,
+				E45C08682CAE8DE70002ABC5 /* VideoPicker.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -172,6 +221,37 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		E48AE54E2CAE76A600E01B84 /* Add Video */ = {
+			isa = PBXGroup;
+			children = (
+				E48AE54F2CAE76B500E01B84 /* AddVideoView.swift */,
+				E45C086A2CAE8E240002ABC5 /* AddVideoViewModel.swift */,
+			);
+			path = "Add Video";
+			sourceTree = "<group>";
+		};
+		E48B8DFF2CAED24500F7BA1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E48B8E0E2CAED39500F7BA1F /* SwiftyGif */ = {
+			isa = PBXGroup;
+			children = (
+				E48B8E062CAED39500F7BA1F /* NSImage+SwiftyGif.swift */,
+				E48B8E072CAED39500F7BA1F /* NSImageView+SwiftyGif.swift */,
+				E48B8E082CAED39500F7BA1F /* ObjcAssociatedWeakObject.swift */,
+				E48B8E092CAED39500F7BA1F /* PrivacyInfo.xcprivacy */,
+				E48B8E0A2CAED39500F7BA1F /* SwiftyGif.h */,
+				E48B8E0B2CAED39500F7BA1F /* SwiftyGifManager.swift */,
+				E48B8E0C2CAED39500F7BA1F /* UIImage+SwiftyGif.swift */,
+				E48B8E0D2CAED39500F7BA1F /* UIImageView+SwiftyGif.swift */,
+			);
+			path = SwiftyGif;
+			sourceTree = "<group>";
+		};
 		E4C9427F2CAD4D1A00E443AC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +266,7 @@
 			children = (
 				E4D3FD012CABD1E800B26198 /* Home */,
 				E47073502CAC408900230107 /* Video */,
+				E48AE54E2CAE76A600E01B84 /* Add Video */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -232,6 +313,7 @@
 			children = (
 				E4D3FCFA2CABC92500B26198 /* VideoResponseEntity.swift */,
 				E4C9428F2CAD87A100E443AC /* DeleteVideoResponseEntity.swift */,
+				E45C086C2CAE99280002ABC5 /* UploadVideoResponseEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -266,6 +348,7 @@
 				E41CCD8B2CABB34B00AD90FE /* Sources */,
 				E41CCD8C2CABB34B00AD90FE /* Frameworks */,
 				E41CCD8D2CABB34B00AD90FE /* Resources */,
+				E40FE32A2CAED0D10034086A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,8 +358,6 @@
 			packageProductDependencies = (
 				E4D3FCEC2CABB89F00B26198 /* CombineMoya */,
 				E4D3FCEE2CABB89F00B26198 /* Moya */,
-				E47073542CAC419C00230107 /* SwiftyGif */,
-				E47073562CAC419C00230107 /* SwiftyGif-Dynamic */,
 				E4C942772CAD454800E443AC /* Lottie */,
 			);
 			productName = ByVids;
@@ -309,7 +390,6 @@
 			mainGroup = E41CCD862CABB34B00AD90FE;
 			packageReferences = (
 				E4D3FCEB2CABB89F00B26198 /* XCRemoteSwiftPackageReference "Moya" */,
-				E47073532CAC419C00230107 /* XCRemoteSwiftPackageReference "SwiftyGif" */,
 				E4C942762CAD454800E443AC /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = E41CCD902CABB34B00AD90FE /* Products */;
@@ -327,8 +407,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E41CCD9A2CABB34C00AD90FE /* Preview Assets.xcassets in Resources */,
+				E4294A382CAEE0A800C8CFCC /* demo.gif in Resources */,
 				E41CCD972CABB34C00AD90FE /* Assets.xcassets in Resources */,
+				E48B8E162CAED39500F7BA1F /* PrivacyInfo.xcprivacy in Resources */,
 				E4C9427C2CAD46FE00E443AC /* loading_indicator_lottie.json in Resources */,
+				E4294A362CAED74500C8CFCC /* sample.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,18 +434,28 @@
 				E4C942812CAD4D2700E443AC /* ResourceViewModel.swift in Sources */,
 				E4D3FCFB2CABC92500B26198 /* VideoResponseEntity.swift in Sources */,
 				E4D3FCE82CABB7D300B26198 /* NetworkError.swift in Sources */,
+				E45C086D2CAE99280002ABC5 /* UploadVideoResponseEntity.swift in Sources */,
+				E48AE5502CAE76B500E01B84 /* AddVideoView.swift in Sources */,
 				E470734F2CAC300000230107 /* VideoGridView.swift in Sources */,
 				E41CCD952CABB34B00AD90FE /* HomePageView.swift in Sources */,
 				E41CCD932CABB34B00AD90FE /* ByVidsApp.swift in Sources */,
 				E4C9427E2CAD4B0700E443AC /* LoadingView.swift in Sources */,
+				E48B8E0F2CAED39500F7BA1F /* UIImage+SwiftyGif.swift in Sources */,
+				E48B8E102CAED39500F7BA1F /* UIImageView+SwiftyGif.swift in Sources */,
+				E48B8E112CAED39500F7BA1F /* NSImageView+SwiftyGif.swift in Sources */,
+				E48B8E122CAED39500F7BA1F /* SwiftyGifManager.swift in Sources */,
+				E48B8E132CAED39500F7BA1F /* ObjcAssociatedWeakObject.swift in Sources */,
+				E48B8E142CAED39500F7BA1F /* NSImage+SwiftyGif.swift in Sources */,
 				E4C942902CAD87A100E443AC /* DeleteVideoResponseEntity.swift in Sources */,
 				E4D3FCE92CABB7D300B26198 /* NetworkProvider+Extension.swift in Sources */,
 				E4D3FCF92CABC85100B26198 /* VideoRepository.swift in Sources */,
+				E45C086B2CAE8E240002ABC5 /* AddVideoViewModel.swift in Sources */,
 				E48AE54D2CAE211E00E01B84 /* View+Modifier.swift in Sources */,
 				E4C942922CAD882100E443AC /* VideoViewModel.swift in Sources */,
 				E4D3FCEA2CABB7D300B26198 /* NetworkProvider.swift in Sources */,
 				E47073522CAC40B600230107 /* VideoPageView.swift in Sources */,
 				E48AE5302CAE093700E01B84 /* MainPageView.swift in Sources */,
+				E45C08692CAE8DE70002ABC5 /* VideoPicker.swift in Sources */,
 				E4D3FCFD2CABC9A500B26198 /* RepositoryImplementation.swift in Sources */,
 				E470734D2CAC2FC500230107 /* SplashView.swift in Sources */,
 			);
@@ -493,19 +586,25 @@
 		E41CCD9E2CABB34C00AD90FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"App/Preview Content\"";
 				DEVELOPMENT_TEAM = P55Q8LM5PD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ByVids-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to allow you to take photos and videos for uploading.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone to record audio for videos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -523,19 +622,25 @@
 		E41CCD9F2CABB34C00AD90FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"App/Preview Content\"";
 				DEVELOPMENT_TEAM = P55Q8LM5PD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ByVids-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to allow you to take photos and videos for uploading.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone to record audio for videos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -574,14 +679,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E47073532CAC419C00230107 /* XCRemoteSwiftPackageReference "SwiftyGif" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/alexiscreuzot/SwiftyGif";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.4.5;
-			};
-		};
 		E4C942762CAD454800E443AC /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
@@ -601,16 +698,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E47073542CAC419C00230107 /* SwiftyGif */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E47073532CAC419C00230107 /* XCRemoteSwiftPackageReference "SwiftyGif" */;
-			productName = SwiftyGif;
-		};
-		E47073562CAC419C00230107 /* SwiftyGif-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E47073532CAC419C00230107 /* XCRemoteSwiftPackageReference "SwiftyGif" */;
-			productName = "SwiftyGif-Dynamic";
-		};
 		E4C942772CAD454800E443AC /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E4C942762CAD454800E443AC /* XCRemoteSwiftPackageReference "lottie-spm" */;

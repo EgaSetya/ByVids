@@ -50,7 +50,10 @@ struct HomePageView: View {
         case .dataRetrieved:
             VideoGridView(viewModel: viewModel) { item in
                 coordinator.showVideoPageView(viewModel.getVideoViewModel(by: item))
+            } addDidTap: {
+                coordinator.showAddViewPageView()
             }
+
         case .error(let message), .connectionError(let message):
             DialogView(type: .commonError(message: message), mainButtonDidTap: ({
                 viewModel.loadVideos()

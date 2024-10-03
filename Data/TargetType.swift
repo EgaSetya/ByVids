@@ -12,6 +12,7 @@ import Moya
 enum VideoTargetType {
     case getVideos
     case deleteVideo(publicID: String)
+    case uploadVideo(videoURL: URL)
 }
 
 extension VideoTargetType: TargetType {
@@ -21,6 +22,7 @@ extension VideoTargetType: TargetType {
         switch self {
         case .getVideos: "resources/video"
         case .deleteVideo: "resources/video/upload"
+        case .uploadVideo: "video/upload"
         }
     }
     
@@ -28,17 +30,33 @@ extension VideoTargetType: TargetType {
         switch self {
         case .getVideos: .get
         case .deleteVideo: .delete
+        case .uploadVideo: .post
         }
     }
     
     var task: Moya.Task {
-        .requestParameters(
+        if case .uploadVideo(let videoURL) = self {
+            let videoData = try! Data(contentsOf: videoURL)
+            let formData = MultipartFormData(provider: .data(videoData), name: "file", fileName: videoURL.lastPathComponent, mimeType: "video/quicktime")
+            
+            let uploadPreset = MultipartFormData(provider: .data("ml_default".data(using: .utf8)!), name: "upload_preset")
+            let publicID = MultipartFormData(provider: .data(UUID().uuidString.data(using: .utf8)!), name: "public_id")
+            let apiKey = MultipartFormData(provider: .data("<api_key>".data(using: .utf8)!), name: "api_key")
+            
+            return .uploadMultipart([formData, uploadPreset, publicID, apiKey])
+        }
+        
+        return .requestParameters(
             parameters: parameters,
             encoding: URLEncoding.default
         )
     }
     
     var headers: [String: String]? {
+        if case .uploadVideo = self {
+            return ["Content-Type": "multipart/form-data"]
+        }
+        
         let apiKey = "764292367668433"
         let apiSecret = "7joFRwDGPx61FwsII7uEPqqamYE"
         let credentials = "\(apiKey):\(apiSecret)"
@@ -53,6 +71,7 @@ extension VideoTargetType: TargetType {
             ["max_results": 30]
         case .deleteVideo(let publicID):
             ["public_ids": publicID]
+        default: [:]
         }
     }
 }

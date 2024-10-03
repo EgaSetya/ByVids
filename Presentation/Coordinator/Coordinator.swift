@@ -25,6 +25,10 @@ final class Coordinator: ObservableObject {
         path.append(Page.video)
     }
     
+    func showAddViewPageView() {
+        path.append(Page.addVideo)
+    }
+    
     // MARK: View Factory
     // TODO: Move this to other file for better separation of concern
     @ViewBuilder
@@ -36,12 +40,14 @@ final class Coordinator: ObservableObject {
             if let selectedResourceViewModel {
                 VideoPageView(viewModel: selectedResourceViewModel)
             }
+        case .addVideo:
+            AddVideoView()
         }
     }
 }
 
 enum Page: String, CaseIterable, Identifiable {
-    case home, video
+    case home, video, addVideo
     
     var id: String { self.rawValue }
 }

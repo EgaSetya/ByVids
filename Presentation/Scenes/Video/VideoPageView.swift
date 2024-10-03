@@ -23,8 +23,9 @@ struct VideoPageView: View {
             VStack {
                 contentView()
             }
-            .navigationBarBackButtonHidden(true)
             .navigationTitle("Video Detail")
+            .navigationBarBackButtonHidden(true)
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {
@@ -59,7 +60,7 @@ struct VideoPageView: View {
                 viewModel.deleteVideo()
             }), cancelButtonDidTap: nil)
         } else if case let .connectionError(message) = viewModel.viewState {
-            DialogView(type: .commonError(message: message), mainButtonDidTap: ({
+            DialogView(type: .connectionError(message: message), mainButtonDidTap: ({
                 viewModel.deleteVideo()
             }), cancelButtonDidTap: nil)
         }

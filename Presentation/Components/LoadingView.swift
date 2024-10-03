@@ -30,7 +30,7 @@ struct LoadingView: View {
     var body: some View {
         VStack {
             LottieView(animationName: "loading_indicator_lottie")
-                .frame(width: 500, height: 300)
+                .frame(height: 300, alignment: .center)
                 .padding([.top], 150)
             Text(type.text)
                 .font(.system(size: 20, weight: .medium, design: .monospaced))

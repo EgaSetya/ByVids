@@ -10,8 +10,9 @@ import Foundation
 
 import Moya
 
-public struct NetworkProvider<Target> where Target: TargetType {
+public final class NetworkProvider<Target> where Target: TargetType {
     private let provider: MoyaProvider<Target>
+    private var requestCancellable: Moya.Cancellable?
     
     public init(
         endpointClosure: @escaping MoyaProvider<Target>.EndpointClosure = NetworkProvider.defaultEndpointCreator,
@@ -36,18 +37,22 @@ public struct NetworkProvider<Target> where Target: TargetType {
         atKeyPath keyPath: String? = nil,
         using decoder: JSONDecoder = JSONDecoder()
     ) -> AnyPublisher<D, NetworkError> {
-        Future { promise in
-            self.provider.request(token) { result in
+        Future { [weak self] promise in
+            guard let self else {
+                return
+            }
+            
+            requestCancellable = provider.request(token) { result in
                 switch result {
                 case .failure(let error):
-                    if isOffline(error: error) {
+                    if self.isOffline(error: error) {
                         promise(.failure(NetworkError.Offline))
                     } else {
                         promise(.failure(NetworkError.Custom(message: "error", code: error.errorCode)))
                     }
                 case .success(let response):
                     do {
-                        try handleHTTPStatusCode(response.statusCode, responseURL: response.response?.url)
+                        try self.handleHTTPStatusCode(response.statusCode, responseURL: response.response?.url)
 
                         decoder.keyDecodingStrategy = .convertFromSnakeCase
 
@@ -60,6 +65,10 @@ public struct NetworkProvider<Target> where Target: TargetType {
             }
         }
         .eraseToAnyPublisher()
+    }
+    
+    public func cancelAllRequests() {
+        requestCancellable?.cancel()
     }
 }
 

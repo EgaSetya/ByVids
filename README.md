@@ -47,3 +47,8 @@ To start the project, simply open the file TerraWeather.xcodeproj.
 ## Preview
 
 ![iOS](./demo.gif)
+
+
+
+
+##### Note: _SwiftyGif_ added to the project manually without using SPM, because it will throws _derived data error_ when build on real device
